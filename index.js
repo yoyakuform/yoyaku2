@@ -6,17 +6,6 @@
         });
     });
 
-    // 参加人数分の氏名欄を生成
-    $('#form-number').click(function () {
-        $('#form-name').empty();
-        var num = $('input[name="number"]:checked').val();
-        for (i = 0; i < num; i++) {
-            $('#form-name').append(
-                `<input class="form-control w-100 mt-1" name="text" maxlength="10">`
-            );
-        }
-    });
-
     // 送信
     $('form').submit(function () {
         var date01 = $('input[name="date01"]').val();
