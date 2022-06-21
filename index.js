@@ -1,27 +1,11 @@
 $(function () {
     // カレンダー
     $(function () {
-        $('input[name="date01"]').datepicker({
+        $('input[name="date00"]').datepicker({
             dateFormat: 'yy/mm/dd',
         });
     });
   
-  $(function () {
-    // カレンダー
-    $(function () {
-        $('input[name="date02"]').datepicker({
-            dateFormat: 'yy/mm/dd',
-        });
-    });
-    
-    $(function () {
-    // カレンダー
-    $(function () {
-        $('input[name="date03"]').datepicker({
-            dateFormat: 'yy/mm/dd',
-        });
-    });
-
     // 送信
     $('form').submit(function () {
         var date01 = $('input[name="date01"]').val();
